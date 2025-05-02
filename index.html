@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+        
     <header>
         <div class="login">
             <ul class="login-ul">
@@ -40,6 +41,8 @@
       </label>
         <p class="header-p">Вітаємо, User!</p>
     </header>
+    
+<div id="container">  
     <main>
         <div class="headline">
             <h1 class="headline-h1">Популярні інетрактивні ігри</h1>
@@ -132,8 +135,9 @@
         <section id="football">
             <h1>Футбол</h1>
             <div class="football-field">
-                <img src="мяч.png" alt="М'яч">
+                <img src="/img/мяч.png" alt="М'яч">
             </div>
+            <div class="line"></div>
         </section>
     
         <!-- Секція "Введіть 3 числа" -->
@@ -145,33 +149,26 @@
                 <input type="number" placeholder="Введіть число">
                 <p>Найбільше число, яке ви ввели - (число)</p>
             </form>
+            <div class="line"></div>
         </section>
     
         <!-- Секція "Наша команда" -->
         <section id="team">
             <h2>Наша команда</h2>
-            <div class="team-member">
-                <div class="photo-placeholder"></div>
-                <h3>Ім'я студента</h3>
-                <p>Інформація про роботи, яку виконав виконавець/ця</p>
-            </div>
-            <div class="arrows">
-                <span class="arrow left">&lt;</span>
-                <span class="arrow right">&gt;</span>
-            </div>
-        </section>
-    
-        <!-- Секція "Обери вчителя" -->
-        <section id="choose-teacher">
-            <h2>Обери вчителя</h2>
-            <div class="teachers-grid">
-                <div class="teacher-card"></div>
-                <div class="teacher-card"></div>
-                <div class="teacher-card"></div>
-                <div class="teacher-card"></div>
-            </div>
+                <div class="team-div">
+                    <button class="arrow-left"><svg width="52" height="102" viewBox="0 0 52 102" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M51 1L0.999998 51L51 101" stroke="black"/></svg></button>
+                        <div class="team-member">
+                            <div class="photo-placeholder"></div>
+                            <h3>Ім'я студента</h3>
+                            <p>Інформація про роботи, яку виконав виконавець/ця</p>
+                        </div>
+                    <button class="arrow-right"><svg width="52" height="102" viewBox="0 0 52 102" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L51 51L1 101" stroke="black"/></svg></button>
+                </div>
+            <div class="line"></div>
         </section>
 
+
+        <!-- Обери вченого -->
         <section id="choose-scientist">
             <h2>Обери вченого/их</h2>
             <ul class="sc-photo">
@@ -189,20 +186,24 @@
                 <li class="sc-photo-el"><button class="sc-btn"><img src="" alt="scienist-photo"></button></li>
             </ul>
             <ul class="description">
+            <div class="left-column">
                 <li><button class="dscrp-button">Які вчені народилися в 19 ст.</button></li>
-                <li><button class="dscrp-button">Знайти рік народження Albert Einshtein</button></li>
-                <li><button class="dscrp-button">Відсортувати вчених за алфавітом</button></li>
-                <li><button class="dscrp-button">Знайти вчених, прізвища яких починаються на на літеру “С” </button></li>
                 <li><button class="dscrp-button">Відсортувати вчених за кількістю прожитих років</button></li>
-                <li><button class="dscrp-button">Видалити всіх вчених, ім’я яких починається на “А”</button></li>
                 <li><button class="dscrp-button">Знайти вченого, який народився найпізніше</button></li>
+                <li><button class="dscrp-button">Відсортувати вчених за алфавітом</button></li>
+            </div>
+            <div class="right-column">
+                <li><button class="dscrp-button">Знайти рік народження Albert Einshtein</button></li>
+                <li><button class="dscrp-button">Знайти вчених, прізвища яких починаються на на літеру “С” </button></li>
+                <li><button class="dscrp-button">Видалити всіх вчених, ім’я яких починається на “А”</button></li>
                 <li><button class="dscrp-button">Знайти вченого, який прожив найдовше і вченого, який прожив найменше</button></li>
+            </div>
                 <li><button class="dscrp-button">Знайти вчених, в яких співпадають перші літери імені і прізвища</button></li>
             </ul>
         </section>
     </main>
-
-        <footer>
+</div>
+        <footer id="foot">
             <div class="logo">
                 <img src="" alt="logo">
                 <h3 class="logo-txt">Jast die Guden</h3>

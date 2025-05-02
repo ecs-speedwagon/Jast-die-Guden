@@ -1,0 +1,14 @@
+@mixin txt($ff, $fw, $fz, $lh, $ls, $color, $decoration, $align,) {
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    letter-spacing: $ls;
+    color: $color;
+    text-decoration: $decoration;
+    text-align: $align;
+  }
+@mixin margins($margin-b:35px, $margin-t:40px){
+    margin-bottom: $margin-b;
+    margin-top: $margin-t;
+}
