@@ -1,0 +1,208 @@
+#football{
+    >h1{
+        @include txt( 'Montserrat Alternates', 400, 16px, 100%, 0, $black-color,  none, center);
+        @include margins;
+    }
+    >.football-field{
+        overflow: hidden;
+        position: relative;
+        width: 720px;
+        height:220px;
+        border: 2px solid $black-color;
+        border-radius: 37px;
+        background-color:#5ABB58;
+        margin: 0 auto;
+        >img{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+
+        }
+    }
+}
+.line{
+    width: 526px;
+    border: 1px solid $black-color;
+    margin: 0 auto;
+    margin-top: 35px;
+    color: $black-color;
+}
+#numbers{
+    >h2{
+        @include txt( 'Montserrat Alternates', 400, 16px, 100%, 0, $black-color,  none, center);
+        @include margins;
+    }
+    >form{
+        display: flex;
+        flex-direction: row;    
+        justify-content: center;
+    gap: 20px;               
+    flex-wrap: wrap;  
+        >input{
+            width: 135px;
+            height: 35px;
+            background-color:#D7D7D7;
+            border: none;
+            border-radius: 20px;
+            @include txt( 'Montserrat Alternates', 400, 12px, 100%, 0, $gray-color,  none, center);
+            @include margins;
+            }
+        >p{
+            width: 100%;
+            @include txt( 'Montserrat Alternates', 400, 12px, 100%, 0, $gray-color,  none, center);
+            @include margins;
+
+        }
+    }
+};
+#team{
+    >h2{
+        @include txt( 'Montserrat Alternates', 400, 16px, 100%, 0, $black-color,  none, center);
+        @include margins;
+    };
+
+    >.team-div{
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+        >button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            position: absolute;
+            display: flex;
+            &:nth-of-type(2n){
+                left: 96%
+            }
+        }
+    
+    };
+
+        .team-member{
+            >h3{
+                @include txt( 'Montserrat Alternates', 400, 14px, 100%, 0, $black-color,  none, center);
+            }
+            >.photo-placeholder{
+                width: 150px;
+                height: 150px;
+                border: none;
+                border-radius: 20px;
+                background-color: #D9D9D9;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            };
+                >p{
+                    @include txt( 'Montserrat Alternates', 400, 12px, 100%, 0, $black-color,  none, center);
+                  }};
+
+
+    .team-rect{
+       width: 320px;
+       height: 225px;
+       margin: 0 auto;
+       display: flex; 
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    .rect-ul{
+        display: flex;
+        gap: 10px;
+    }
+};
+
+
+.svg-active{
+    width: 30px;
+    & rect{
+        fill: #797979;
+        width: 30px;
+    }
+}
+#choose-scientist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        >h2{
+        @include txt( 'Montserrat Alternates', 400, 16px, 100%, 0, $black-color,  none, center);
+        @include margins;
+        }
+        .sc-photo{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 35px;
+            padding: 20px 0;
+            max-width:600px;
+            column-gap: 60px;
+            margin-top: -20px;
+        }
+        .sc-photo-el{
+            width: 100px;
+            height: 100px;
+            background-color: #D9D9D9;
+            border-radius: 20px;
+            .sc-btn{
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                border: none;
+                background: none;
+                cursor: pointer;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+        }
+        .description {
+            width: calc((100%)/1.5);
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            margin-top: -20px;
+            padding: 20px 10px;
+            >:last-child{
+                margin-top: -10px;
+            }
+            >.left-column{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                text-align: right;
+            }
+            >.right-column{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                text-align: left;
+                max-width: 441px;
+            }
+        }
+        
+    .dscrp-button {
+        @include txt( 'Montserrat Alternates', 400, 12px, 100%, 0, $black-color,  none,left);
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 3px 4px 1px #D7D7D7;
+        
+  
+        &:hover {
+          background-color: #333;
+        }
+      }
+        
+}
