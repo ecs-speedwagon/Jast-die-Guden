@@ -1,0 +1,133 @@
+.header-section{
+     gap: 50px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+ }
+ .ul-header{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+ }
+ .header-a{
+     display: flex;
+     flex-direction: row;
+     gap: 50px;
+     margin-right: 360px; 
+     flex-wrap: wrap;
+ }
+ .header-label{
+     max-width: 1090px;
+     gap: 52px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+ }
+ .header-link{
+     @include txt( 'Montserrat Alternates', 400, 12px, 100%, 0, $black-color,  none, none);
+ }
+ .header-p{
+     margin-top: 5px;
+     margin-bottom: 30px;
+     @include txt( 'Montserrat Alternates', 400, 12px, 100%, 0, $black-color,  none, none);
+ }
+ .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    border: solid 1px $gray-color;
+    border-radius: 20px;
+}
+.switch input {
+    opacity: 0; 
+    width: 0;
+    height: 0;
+}
+.switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $gray-color; 
+    transition: 0.4s;
+    border-radius: 34px; 
+}
+.switch .slider::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    left: 0px;
+    bottom: 0px;
+    background-color: white; 
+    transition: 0.4s;
+}
+.switch input:checked + .slider {
+    background-color: $gray-color;
+}
+.switch input:checked + .slider::before {
+    transform: translateX(20px); 
+    background-color: $black-color;
+}
+.name-input{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    background-color: $gray-background;
+    text-align: center;
+}
+.welcome-overlay{
+    width: 576px;
+    height: 316px;
+    padding-top: 45px;
+    background-color: blue;
+}
+.login{
+    margin-left: 90px;
+    width: 392px;
+    height: 223px;
+    text-align: center;
+    background-color: red;
+}
+.login-ul{
+    >li:last-child{
+        max-height: 50px;
+        background-color: purple;
+    }
+}
+.overlay-input{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    background-color: $gray-background;
+    text-align: left;
+}
+.hello-p{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;   
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+.overlay-p{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;   
+}
+.li-button{
+    padding-left: 400px;
+    >button{
+        text-align: center;
+        border: solid black 1px;
+    }
+}

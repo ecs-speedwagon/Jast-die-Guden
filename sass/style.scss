@@ -1,0 +1,41 @@
+@import "./vars";
+@import "./utilites.scss/mixins";
+@import "./components/gaming";
+@import "./components/header";
+
+#container{
+    max-width: 1090px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h5{
+    margin-block-start: 0;
+    margin-block-end: 0 ;
+}
+img{
+    overflow-clip-margin: content-box 0px;
+}
+a{
+    text-decoration: none;
+    color: var(--fourth-color);
+    cursor: default;
+}
+ul{
+    padding-inline-start: 0px;
+}
+li{
+    list-style: none;
+}
+.line{
+    width: 526px;
+    border: 1px solid $black-color;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.dashed-line{
+    width: 100px;
+    border: 1px dashed $black-color;
+    margin-top: 15px;
+    margin-left: 33px;
+}

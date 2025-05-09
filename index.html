@@ -3,11 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./svg/rock.svg">
+    <link rel="stylesheet" href="./svg/sissers.svg">
+    <link rel="stylesheet" href="./svg/paper.svg">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Jast-die-Guden</title>
 </head>
 <body>
+        
+    <header>
+
+
+        <section class="welcome-overlay">
+            <div class="login">
+                <ul class="login-ul">
+                    <li class="li-button">
+                        <button class="close-buton"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L8.5 8.5M16 16L8.5 8.5M8.5 8.5L16 1L1 16" stroke="black"/>
+                            </svg>
+                            </button>
+                    </li>
+                    <li>
+                        <p class="hello-p">Привіт! Ви потрапили на сайт інтерактивних ігор та завдань Надіємось, що вам сподобається і ви отримаєте позитивні емоції! Бажаємо Вам гарно провести час!</p>
+                    </li>
+                    <li>
+                        <p class="overlay-p">Введіть своє ім’я:</p>
+                    </li>
+                    <li>
+                        <label for="input">
+                            <input type="text" placeholder="Ваше ім’я..." class="overlay-input">
+                        </label>
+                    </li>
+                    <li>
+                        <button class="basick-black-bttn">Зберегти</button>
+                    </li>
+                </ul>            
+            </div>
+        </section>
+
+
+
+<div id="container">  
+        <section class="header-section">
+            <div class="logo-div"><img src="" alt="" class="logo"></div>
+            <ul class="header-a">
+                <li><a href="" class="header-link">Інтерактив</a></li>
+                <li><a href="" class="header-link">Наша команда</a></li>
+                <li><a href="" class="header-link">Контакти</a></li>
+            </ul>  
+            <ul class="header-label">
+                <li class="slider-li">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </li>
+                <li><p class="header-p">Вітаємо, User!</p></li>
+            </ul>  
+        </section>
+</div>
+    </header>
+    <main>
+    <div id="container">  
+        <section class="headline">
+            <div class="headline-div">
+                <h1 class="headline-h1">Популярні інетрактивні ігри</h1>
+            </div>
+            <div class="line"></div>
+            <div class="jear-calc">
+                <p class="basick-p">Перевір в який рік ти народився</p>
+                <ul class="jear-ul">
+                    <li class="guess-li">
+                        <div class="input-guess">
+                             <label for="input">
+                                <input type="text" placeholder="Введіть рік наро-дження" class="serch-input">
+                            </label>
+                            <button class="serch-button"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6.52174" cy="6.52174" r="5.52174" stroke="white" stroke-width="2"/><path d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z" fill="white"/></svg></button>
+                        </div>
+                        <div><p href="" class="grean-p">Ви народилися у високосний рік!</p></div>
+                    </li>
+                </ul>
+            </div> 
+        </section>     
+        <div class="line"></div> 
+        <section class="guess-section">
+            <p class="basick-p">Вгадай число, яке загадав комп’ютер</p>
+            <ul class="guess-ul">
+                <li class="li-guess">
+                    <div class="input-guess">
+                        <label for="input">
+                            <input type="text" placeholder="Введіть число" class="input-serch">
+                        </label>
+                        <button class="button-serch"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6.52174" cy="6.52174" r="5.52174" stroke="white" stroke-width="2"/><path d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z" fill="white"/></svg></button>
+                    </div>
+                    <div><p href="" class="grean-p">Вітаю, ви вгадали число! () </p></div>
+                </li>
+            </ul>
+        </section>
+        <div class="line"></div>
+        <section class="rps-section">
+            <ul class="rps-ul">
+                <li>
+                    <p class="basick-p">Камінь - ножиці - папір</p>
+                </li>
+                <li>
+                    <ul class="rps-buttons">
+                        <li class="rsp-button">
+                            <button class="rock"></button>
+                            <button class="sissers"></button>
+                            <button class="paper"></button>
+                        </li>
+                        <li class="rsp-txt"> 
+                            <p class="rps-p">Рахунок:Комп’ютер - 0 Ви - 0</p>
+                        </li>
+                    </ul>
+                </li>
+                <li><p href="" class="grean-p">Ви виграли раунд!</p></li>
+                <li><button class="basick-black-bttn">Варіант комп’ютера</button></li>
+            </ul>
+        </section>
+        <div class="line"></div>
+        <section class="calc-section">
+            <p class="basick-p">Калькулятор</p>
+            <ul class="use-calc">
+                <li class="calc-li">
+                    <label for="input">
+                        <input type="text" placeholder="Введіть число" class="gray-input">
+                    </label>
+                </li>
+                <li>
+                    <ul class="simbuls-ul">
+                        <li class="arithmetic-symbols">
+                            <button class="arithmetic-operators">+</button>
+                            <button class="arithmetic-operators">*</button>
+                        </li>
+                        <li class="arithmetic-symbols">
+                            <button class="arithmetic-operators">-</button>
+                            <button class="arithmetic-operators">/</button>
+                        </li>
+                    </ul>
+                </li>
+                <li class="calc-li">
+                    <label for="input">
+                        <input type="text" placeholder="Введіть число" class="gray-input">
+                    </label>
+                </li>
+                <li class="calc-li"><button class="arithmetic-operators">=</button></li>
+                <li class="calc-li">
+                    <label for="input">
+                        <input type="text" placeholder="Результат" class="gray-input">
+                    </label>
+                </li>
+            </ul>
+        </section>
+        <div class="line"></div>
+        <section class="time-calc-div">
+            <p class="basick-p">Калькулятор часу</p>
+            <ul class="calc-ul">
+                <li>
+                    <div class="input-guess">
+                        <label for="input">
+                            <input type="text" placeholder="Введіть рік наро-дження" class="serch-input">
+                        </label>
+                        <button class="serch-button"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6.52174" cy="6.52174" r="5.52174" stroke="white" stroke-width="2"/><path d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z" fill="white"/></svg></button>
+                    </li>
+                <li><div class="dashed-line"></div></li>
+                <li><p class="h-calculated"></p></li>
+            </ul>
+        </section>
+        <div class="line"></div>
+        <section>
+            <p class="basick-p">Google динозавр</p>            
+        </section>
+        <!-- Секція "Футбол" -->
+        <section id="football">
+            <h1>Футбол</h1>
+            <div class="football-field">
+                <img src="/img/мяч.png" alt="М'яч">
+            </div>
+            <div class="line"></div>
+        </section>
     
+        <!-- Секція "Введіть 3 числа" -->
+        <section id="numbers">
+            <h2>Введіть 3 числа</h2>
+            <form>
+                <input type="number" placeholder="Введіть число">
+                <input type="number" placeholder="Введіть число">
+                <input type="number" placeholder="Введіть число">
+                <p>Найбільше число, яке ви ввели - (число)</p>
+            </form>
+            <div class="line"></div>
+        </section>
+    
+        <!-- Секція "Наша команда" -->
+        <section id="team">
+            <h2>Наша команда</h2>
+                <div class="team-div">
+                    <button class="arrow-left"><svg width="52" height="102" viewBox="0 0 52 102" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M51 1L0.999998 51L51 101" stroke="black"/></svg></button>
+                        <div class="team-member">
+                            <div class="photo-placeholder"></div>
+                            <h3>Ім'я студента</h3>
+                            <p>Інформація про роботи, яку виконав виконавець/ця</p>
+                        </div>
+                    <button class="arrow-right"><svg width="52" height="102" viewBox="0 0 52 102" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L51 51L1 101" stroke="black"/></svg></button>
+                </div>
+            <div class="line"></div>
+        </section>
+        <!-- Обери вченого -->
+        <section id="choose-scientist">
+            <h2>Обери вченого/их</h2>
+            <ul class="sc-photo">
+                <li class="sc-photo-el"><button class="sc-btn"><img src="" alt="scienist-photo"></button></li>
+                <li class="sc-photo-el"><button class="sc-btn"><img src="" alt="scienist-photo"></button></li>
+                <li class="sc-photo-el"><button class="sc-btn"><img src="" alt="scienist-photo"></button></li>
+                <li class="sc-photo-el"><button class="sc-btn"><img src="" alt="scienist-photo"></button></li>
+                <li class="sc-photo-el"><button class="sc-btn"><img src="" alt="scienist-photo"></button></li>
+                <li class="sc-photo-el"><button class="sc-btn"><img src="" alt="scienist-photo"></button></li>
+                <li class="sc-photo-el"><button class="sc-btn"><img src="" alt="scienist-photo"></button></li>
+                <li class="sc-photo-el"><button class="sc-btn"><img src="" alt="scienist-photo"></button></li>
+                <li class="sc-photo-el"><button class="sc-btn"><img src="" alt="scienist-photo"></button></li>
+                <li class="sc-photo-el"><button class="sc-btn"><img src="" alt="scienist-photo"></button></li>
+                <li class="sc-photo-el"><button class="sc-btn"><img src="" alt="scienist-photo"></button></li>
+                <li class="sc-photo-el"><button class="sc-btn"><img src="" alt="scienist-photo"></button></li>
+            </ul>
+            <ul class="description">
+                <li><button class="dscrp-button">Які вчені народилися в 19 ст.</button></li>
+                <li><button class="dscrp-button">Знайти рік народження Albert Einshtein</button></li>
+                <li><button class="dscrp-button">Відсортувати вчених за алфавітом</button></li>
+                <li><button class="dscrp-button">Знайти вчених, прізвища яких починаються на на літеру “С” </button></li>
+                <li><button class="dscrp-button">Відсортувати вчених за кількістю прожитих років</button></li>
+                <li><button class="dscrp-button">Видалити всіх вчених, ім’я яких починається на “А”</button></li>
+                <li><button class="dscrp-button">Знайти вченого, який народився найпізніше</button></li>
+                <li><button class="dscrp-button">Знайти вченого, який прожив найдовше і вченого, який прожив найменше</button></li>
+                <li><button class="dscrp-button">Знайти вчених, в яких співпадають перші літери імені і прізвища</button></li>
+            </ul>
+        </section>
+    </div>
+    </main>
+        <footer>
+            <div class="logo">
+                <img src="" alt="logo">
+                <h3 class="logo-txt">Jast die Guden</h3>
+            </div>
+            <div class="foot-info">
+                <p class="tel-num">Тел: +38 (777) 777 77 77</p>
+                <p class="mail">E-Mail: <a href="mailto:codingmagic@gmail.com">jastdieguden@gmail.com</a></p>
+                <p class="fbook">Facebook: <a href="#">Jast die Guden</a></p>
+                <p class="twitter">Twitter: <a href="#">Jast die Guden</a></p>
+                <p class="inst">Instagram: <a href="#">Jast die Guden</a></p>
+              </div>
+              <div>
+                <form class="sub-form">
+                  <input type="email" placeholder="Ваша ел. адреса...">
+                  <button type="submit">Підписатись</button>
+                </form>
+              <p class="sub-p">*Підписавшись, Ви зможете отримувати інформацію про новини на сайті</p>
+            </div>
+        </footer>
 </body>
 </html>

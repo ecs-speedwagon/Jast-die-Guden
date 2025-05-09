@@ -1,0 +1,193 @@
+.grean-p{
+    text-align: center;
+    @include txt( 'Montserrat Alternates', 400, 12px, 100%, 0, $green-color,  none, none);
+}
+.headline-h1{
+    @include txt( 'Montserrat Alternates', 400, 24px, 100%, 0, $black-color,  none, center);
+    @include margins;
+}
+.basick-p{
+    @include txt( 'Montserrat Alternates', 400, 16px, 100%, 0, $black-color,  none, none);
+    @include margins;
+}
+.rps-p{
+    @include txt( 'Montserrat Alternates', 400, 12px, 100%, 0, $black-color,  none, none);
+}
+.rps-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-left: 445px;
+    gap: 75px;
+    @include margins;
+}
+.rsp-button {
+    margin: -8px;
+}
+.rsp-button > * {
+    margin: 8px;
+}
+.rsp-txt{
+    max-width: 100px;
+}
+.rock{
+    background-color: $black-color;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}
+.sissers{
+    background-color: $black-color;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}
+.paper{
+    background-color: $black-color;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}
+.basick-black-bttn{
+    @include txt( 'Montserrat Alternates', 400, 12px, 100%, 0, $white-color,  none,none);
+    @include margins;   
+    background-color: $black-color;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.arithmetic-operators{
+    @include txt( 'Montserrat Alternates', 400, 12px, 100%, 0, $white-color,  none,none);
+    background-color: $black-color;
+    padding: 7px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 3px 4px 1px $gray-color;
+}
+.gray-background{
+    @include txt( 'Montserrat Alternates', 400, 12px, 100%, 0, $gray-font,  none,none);
+    background-color: $gray-background;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 3px 2px 1px $gray-font;
+}
+.time-calc-div{
+    text-align: center;
+}
+.calc-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.use-calc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 38px;
+}
+.simbuls-ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.arithmetic-symbols{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.jear-calc{
+    text-align: center;
+}
+.jear-ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 150px;
+}
+.gray-input{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 90px;
+    background-color: $gray-background;
+    text-align: center;
+}
+.guess-section{
+    text-align: center;
+}
+.input-serch{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    background-color: $gray-background;
+    padding: 10px;
+    width: 90px;
+    margin-left: -50px;
+}
+.button-serch{
+    background-color: $black-color;
+    width: 35px;
+    height: 35px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-right: 50px;
+}
+.serch-input{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    background-color: $gray-background;
+    padding: 10px;
+}
+.li-guess{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+.serch-button{
+    background-color: $black-color;
+    width: 35px;
+    height: 35px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.input-guess{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px;
+}
+.guess-li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+.rps-section{
+    text-align: center;
+}
+.calc-section{
+    text-align: center;
+}
+.calc-li{
+    padding-top: 20px;
+}
+.calc-section{
+    text-align: center;
+}
+.h-calculated{
+    @include txt( 'Montserrat Alternates', 400, 16px, 100%, 0, $black-color,  none, none);
+}
+.rock{
+    background-image: url('svg/rock.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
