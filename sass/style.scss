@@ -2,14 +2,18 @@
 @import "./utilities/mixins";
 @import "./components/gaming";
 @import "./components/footer";
-@import "./components/gaming";
+@import "./components/main-bg";
 
-.container{
+#container{
     max-width: auto;
     padding: 0 15px;
     margin: 0 auto;
 }
-
+#background{
+background-image:url('/img/svg/main-bg.svg');
+background-size: cover;
+background-repeat: no-repeat;
+};
 h5{
     margin-block-start: 0;
     margin-block-end: 0 ;
@@ -27,6 +31,4 @@ ul{
 }
 li{
     list-style: none;
-}
-
-;
+};
