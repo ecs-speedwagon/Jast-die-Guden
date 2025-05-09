@@ -39,3 +39,38 @@ li{
     margin-top: 15px;
     margin-left: 33px;
 }
+
+@import "./vars";
+@import "./utilities/mixins";
+@import "./components/gaming";
+@import "./components/footer";
+@import "./components/main-bg";
+
+#container{
+    max-width: auto;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+#background{
+background-image:url('/img/svg/main-bg.svg');
+background-size: cover;
+background-repeat: no-repeat;
+};
+h5{
+    margin-block-start: 0;
+    margin-block-end: 0 ;
+}
+img{
+    overflow-clip-margin: content-box 0px;
+}
+a{
+    text-decoration: none;
+    color: var(--fourth-color);
+    cursor: default;
+}
+ul{
+    padding-inline-start: 0px;
+}
+li{
+    list-style: none;
+};
