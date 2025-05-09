@@ -4,6 +4,8 @@
         @include margins;
     }
     >.football-field{
+        overflow: hidden;
+        position: relative;
         width: 720px;
         height:220px;
         border: 2px solid $black-color;
@@ -13,6 +15,8 @@
         >img{
             width: 50px;
             height: 50px;
+            position: absolute;
+
         }
     }
 }
@@ -56,14 +60,26 @@
         @include txt( 'Montserrat Alternates', 400, 16px, 100%, 0, $black-color,  none, center);
         @include margins;
     };
+
     >.team-div{
+        margin: 0 auto;
         display: flex;
-        >.team-member{
+        position: relative;
+        >button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            position: absolute;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
+            &:nth-of-type(2n){
+                left: 96%
+            }
+        }
+    
+    };
+
+        .team-member{
             >h3{
                 @include txt( 'Montserrat Alternates', 400, 14px, 100%, 0, $black-color,  none, center);
             }
@@ -77,20 +93,34 @@
                 background-size: cover;
                 background-position: center;
             };
-            >p{
-                @include txt( 'Montserrat Alternates', 400, 12px, 100%, 0, $black-color,  none, center);
-              }
+                >p{
+                    @include txt( 'Montserrat Alternates', 400, 12px, 100%, 0, $black-color,  none, center);
+                  }};
 
-            };
-            >button {
-                background: none;
-                border: none;
-                cursor: pointer;
-                padding: 10px;
-            }
-    };
+
+    .team-rect{
+       width: 320px;
+       height: 225px;
+       margin: 0 auto;
+       display: flex; 
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    .rect-ul{
+        display: flex;
+        gap: 10px;
+    }
 };
 
+
+.svg-active{
+    width: 30px;
+    & rect{
+        fill: #797979;
+        width: 30px;
+    }
+}
 #choose-scientist{
     display: flex;
     flex-direction: column;
@@ -168,6 +198,7 @@
         border-radius: 20px;
         cursor: pointer;
         box-shadow: 3px 4px 1px #D7D7D7;
+        
   
         &:hover {
           background-color: #333;
