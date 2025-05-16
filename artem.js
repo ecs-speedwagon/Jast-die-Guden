@@ -280,18 +280,69 @@ const scientists = [
     });
 
 
+    
 
 
-
-
-
-
-
-const email = document.querySelector('.sub-form').value;
-const submit = document.querySelector('.submit');
-
-submit.addEventListener('click',()=>{
-    if(email.value !==0){
-
+    let dino = document.getElementById("dino");
+    let cactus = document.getElementById("cactus");
+    let startBtn = document.getElementById("start-dino");
+    let game;
+    
+    function jump() {
+      if (!dino.classList.contains("animate")) {
+        dino.classList.add("animate");
+        setTimeout(function () {
+          dino.classList.remove("animate");
+        }, 500);
+      }
     }
-})
+    
+    startBtn.addEventListener("click", function () {
+      cactus.style.animation = "cactusMove 1s infinite linear";
+    
+      game = setInterval(function () {
+        let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
+        let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
+    
+        if (cactusLeft < 80 && cactusLeft > 0 && dinoTop >= 130) {
+          cactus.style.animation = "none";
+          clearInterval(game);
+          alert("GAME OVER!");
+        }
+      }, 10);
+    });
+    
+    document.getElementById("game").addEventListener("click", jump);
+
+
+
+
+
+
+
+
+
+
+
+const inputElement = document.querySelector('.sub-form > input');
+const openModal = document.getElementById('openBtn');
+const modal = document.getElementById('openModal');
+const closeModal = document.querySelector('[href="#close"]');
+
+openModal.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    if (inputElement.value.trim() !== '') {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    } else {
+        alert('Введіть щось в інпут');
+    }
+});
+
+closeModal.addEventListener('click', function(e) {
+    e.preventDefault();
+    modal.classList.remove('active');
+    document.body.style.overflow = 'visible';
+});
+

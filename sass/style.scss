@@ -1,19 +1,17 @@
 @import "./vars";
 @import "./utilities/mixins";
 @import "./components/gaming";
-@import "./components/footer";
+@import "./components/header";
 @import "./components/main-bg";
+@import "./components/footer";
 
 #container{
-    max-width: auto;
+    max-width: 1090px;
     padding: 0 15px;
     margin: 0 auto;
+    background-color: $white-color;
 }
-#background{
-background-image:url('/img/svg/main-bg.svg');
-background-size: cover;
-background-repeat: no-repeat;
-};
+
 h5{
     margin-block-start: 0;
     margin-block-end: 0 ;
@@ -31,4 +29,29 @@ ul{
 }
 li{
     list-style: none;
+}
+.line{
+    width: 526px;
+    border: 1px solid $black-color;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.dashed-line{
+    width: 100px;
+    border: 1px dashed $black-color;
+    margin-top: 15px;
+    margin-left: 33px;
+}
+#container{
+    max-width: 1090px;
+    padding: 0 15px;
+    margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
+}
+#background{
+background-image:url('/img/svg/main-bg.svg');
+background-size: cover;
+background-repeat: no-repeat;
+background-color: gainsboro;
 };
