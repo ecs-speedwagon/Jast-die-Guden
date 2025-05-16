@@ -1,12 +1,15 @@
 @import "./vars";
-@import "./utilites.scss/mixins";
+@import "./utilities/mixins";
 @import "./components/gaming";
 @import "./components/header";
+@import "./components/main-bg";
+@import "./components/footer";
 
 #container{
     max-width: 1090px;
     padding: 0 15px;
     margin: 0 auto;
+    background-color: $white-color;
 }
 
 h5{
@@ -39,38 +42,16 @@ li{
     margin-top: 15px;
     margin-left: 33px;
 }
-
-@import "./vars";
-@import "./utilities/mixins";
-@import "./components/gaming";
-@import "./components/footer";
-@import "./components/main-bg";
-
 #container{
-    max-width: auto;
+    max-width: 1090px;
     padding: 0 15px;
     margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
 }
 #background{
 background-image:url('/img/svg/main-bg.svg');
 background-size: cover;
 background-repeat: no-repeat;
-};
-h5{
-    margin-block-start: 0;
-    margin-block-end: 0 ;
-}
-img{
-    overflow-clip-margin: content-box 0px;
-}
-a{
-    text-decoration: none;
-    color: var(--fourth-color);
-    cursor: default;
-}
-ul{
-    padding-inline-start: 0px;
-}
-li{
-    list-style: none;
+background-color: gainsboro;
 };

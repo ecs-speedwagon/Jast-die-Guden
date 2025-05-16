@@ -1,27 +1,40 @@
 .header-section{
-     gap: 50px;
+     gap: 20px;
      display: flex;
      flex-direction: row;
-     flex-wrap: wrap;
+     flex-wrap: nowrap;
  }
+.logo-ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
  .ul-header{
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
  }
- .header-a{
+ .header-ul{
+     margin-top: 20px;
      display: flex;
      flex-direction: row;
-     gap: 50px;
-     margin-right: 360px; 
+     gap: 40px;
+     margin-right: 280px; 
      flex-wrap: wrap;
+     >li{
+        padding-top: 20px;
+     }
  }
  .header-label{
      max-width: 1090px;
-     gap: 52px;
+     gap: 20px;
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
+     >:last-child{
+        padding-top: 20px;
+     }
  }
  .header-link{
      @include txt( 'Montserrat Alternates', 400, 12px, 100%, 0, $black-color,  none, none);
@@ -44,6 +57,9 @@
     width: 0;
     height: 0;
 }
+.slider-li{
+    padding-top: 20px;
+}
 .switch .slider {
     position: absolute;
     cursor: pointer;
@@ -65,6 +81,9 @@
     bottom: 0px;
     background-color: white; 
     transition: 0.4s;
+    background-image:url('/img/sun.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .switch input:checked + .slider {
     background-color: $gray-color;
@@ -72,6 +91,9 @@
 .switch input:checked + .slider::before {
     transform: translateX(20px); 
     background-color: $black-color;
+    background-image:url('/img/moon.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .name-input{
     border-radius: 20px;
@@ -83,28 +105,50 @@
 .welcome-overlay{
     width: 576px;
     height: 316px;
-    padding-top: 45px;
-    background-color: blue;
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    background-color: $gray-background;
+    border-radius: 20px;
+    background-image: url('/img/foot-modal-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.close-buton{
+    background-color: $gray-background;
 }
 .login{
     margin-left: 90px;
     width: 392px;
     height: 223px;
     text-align: center;
-    background-color: red;
 }
 .login-ul{
     >li:last-child{
         max-height: 50px;
-        background-color: purple;
+        @include margins;
+        >button{
+            margin: 0px;
+        }
+    }
+}
+.li-button{
+    padding-left: 400px;
+    >button{
+        text-align: center;
+        border: none;
     }
 }
 .overlay-input{
     border-radius: 20px;
     border: none;
     padding: 10px;
-    background-color: $gray-background;
+    background-color: $white-color;
     text-align: left;
+}
+.overlay-input:focus {
+    outline: none;
+    box-shadow: none;
 }
 .hello-p{
     font-family: Inter;
@@ -124,10 +168,25 @@
     letter-spacing: 0%;
     text-align: center;   
 }
-.li-button{
-    padding-left: 400px;
-    >button{
-        text-align: center;
-        border: solid black 1px;
+.enter-black-buttton{
+    @include txt( 'Montserrat Alternates', 400, 12px, 100%, 0, $white-color,  none,none);  
+    background-color: $black-color;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    >img{
+        width: 80px;
+        height: 80px;
     }
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.logo-txt{
+    @include txt( 'Montserrat Alternates', 600, 22px, 100%, 0, $black-color,  none, center);
 }
